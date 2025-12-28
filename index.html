@@ -6,87 +6,98 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(180deg, #000000, #1a1a1a);
-    color: #ffffff;
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #000000, #1a1a1a);
+  color:#fff;
 }
-
-.container {
-    max-width: 420px;
-    margin: auto;
-    padding: 40px 20px;
-    text-align: center;
+.container{
+  max-width:420px;
+  margin:auto;
+  padding:40px 20px;
+  text-align:center;
 }
-
-.logo {
-    width: 220px;
-    margin-bottom: 30px;
+.logo{
+  width:220px;
+  margin-bottom:22px;
 }
-
-.link {
-    display: block;
-    background: #111111;
-    border: 1px solid #444444;
-    border-radius: 14px;
-    padding: 15px;
-    margin: 14px 0;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-    cursor: pointer;
-    position: relative;
-    z-index: 10;
+.note{
+  font-size:13px;
+  opacity:.8;
+  margin: 6px 0 18px;
 }
-
-.link:hover {
-    background: #1f1f1f;
+.link{
+  display:block;
+  background:#111;
+  border:1px solid #444;
+  border-radius:14px;
+  padding:15px;
+  margin:12px 0;
+  text-decoration:none;
+  color:#fff;
+  font-size:18px;
+  cursor:pointer;
 }
-
-.footer {
-    margin-top: 30px;
-    font-size: 14px;
-    opacity: 0.7;
+.link:hover{ background:#1f1f1f; }
+.small{
+  display:inline-block;
+  margin-top:14px;
+  padding:10px 14px;
+  border-radius:12px;
+  border:1px solid #444;
+  background:#0f0f0f;
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
 }
+.footer{ margin-top:26px; font-size:13px; opacity:.7; }
 </style>
 </head>
 
 <body>
-
 <div class="container">
 
-<img src="logo.png" class="logo" alt="D Diamond Iraq">
+  <img src="logo.png" class="logo" alt="D Diamond Iraq">
 
-<a class="link" href="https://www.facebook.com/people/D-Diamond-Iraq/61579646630082/" target="_blank" rel="noopener">
-📘 Facebook
-</a>
+  <div class="note">
+    If an app opens without the page, tap: <b>Open in Browser</b>
+  </div>
 
-<a class="link" href="https://www.instagram.com/d.diamond_iraq/" target="_blank" rel="noopener">
-📸 Instagram
-</a>
+  <!-- Facebook (more compatible than /people/ on many phones) -->
+  <a class="link" href="https://www.facebook.com/profile.php?id=61579646630082" target="_blank" rel="noopener">
+    📘 Facebook
+  </a>
 
-<a class="link" href="https://www.tiktok.com/@d.diamond_iraq" target="_blank" rel="noopener">
-🎵 TikTok
-</a>
+  <a class="link" href="https://www.instagram.com/d.diamond_iraq/" target="_blank" rel="noopener">
+    📸 Instagram
+  </a>
 
-<a class="link" href="https://www.youtube.com/@D.Diamond_Iraq" target="_blank" rel="noopener">
-▶️ YouTube
-</a>
+  <a class="link" href="https://www.tiktok.com/@d.diamond_iraq" target="_blank" rel="noopener">
+    🎵 TikTok
+  </a>
 
-<a class="link" href="https://www.threads.com/@d.diamond_iraq" target="_blank" rel="noopener">
-🧵 Threads
-</a>
+  <a class="link" href="https://www.youtube.com/@D.Diamond_Iraq" target="_blank" rel="noopener">
+    ▶️ YouTube
+  </a>
 
-<a class="link" href="https://www.snapchat.com/d.diamondiraq" target="_blank" rel="noopener">
-👻 Snapchat
-</a>
+  <!-- Threads: threads.net often works better with the app -->
+  <a class="link" href="https://www.threads.net/@d.diamond_iraq" target="_blank" rel="noopener">
+    🧵 Threads
+  </a>
 
-<div class="footer">
-© D Diamond Iraq
+  <!-- Snapchat: correct pattern -->
+  <a class="link" href="https://www.snapchat.com/add/d.diamondiraq" target="_blank" rel="noopener">
+    👻 Snapchat
+  </a>
+
+  <!-- Browser fallback -->
+  <a class="small" href="https://d-diamond-iraq.github.io/d-diamond-iraq/" target="_blank" rel="noopener">
+    🌐 Open this page in browser
+  </a>
+
+  <div class="footer">© D Diamond Iraq</div>
+
 </div>
-
-</div>
-
 </body>
 </html>
